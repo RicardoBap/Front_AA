@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="ui-g">
+
+    <div class="p-col-12">
+      <h1>Relatórios de lançamentos por pessoa</h1>
+    </div>
+
+    <form #relatorioForm=ngForm (ngSubmit)="gerar()">
+
+      <div class="p-col-12">
+        <label>Vencimento</label>
+        <input type="date" pInputText name="periodoInicio" style="width: 160px" required
+              name="periodoInicio" [(ngModel)]="periodoInicio">
+        <label>até</label>
+        <input type="date" pInputText name="periodoFim" style="width: 160px" required
+              name="periodoFim" [(ngModel)]="periodoFim">
+      </div>
+
+      <div class="p-col-12">
+        <button pButton type="submit" label="Gerar" [disabled]="!relatorioForm.valid"></button>
+      </div>
+
+    </form>
+
+  </div>
+
+</div>

@@ -1,0 +1,85 @@
+.navbar-menu {
+  font-weight: bold;
+  position: fixed;  
+  width: 210px;
+  margin: 0;
+  z-index: 9998;
+  padding: 0;  
+  list-style: none;
+}
+
+.navbar-usuario {
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px;
+  border-bottom: 1px solid #525151;
+  margin-bottom: 15px;
+}
+
+.navbar-menuitem {
+  padding: 15px;
+}
+
+.navbar-menuitem a {
+  color:#494541; 
+  text-decoration: none;
+}
+
+.navbar-menuitem a:hover {
+  color: #1976d2;
+}
+
+.navbar-menuitem.ativo {
+  background-color: #C0BBB7;
+}
+
+/*----------------< NAVBAR >----------------------*/
+
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+}
+
+.toolbar i {
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo:hover {
+  opacity: 0.8;
+}
+
